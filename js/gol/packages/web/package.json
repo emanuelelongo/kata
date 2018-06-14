@@ -1,0 +1,23 @@
+{
+  "name": "gol-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "next"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mathjs": "^3.13.1",
+    "next": "^2.3.1",
+    "next-connect-redux": "^0.1.5",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "redux": "^3.6.0",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-thunk": "^2.2.0",
+    "socket.io-client": "^2.0.1"
+  }
+}

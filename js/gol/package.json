@@ -1,0 +1,10 @@
+{
+	"scripts": {
+		"api": "cd packages/api && npm start",
+		"web": "cd packages/web && npm start",
+		"postinstall": "lerna bootstrap --hoist"
+	},
+	"devDependencies": {
+		"lerna": "^2.0.0-rc.4"
+	}
+}
