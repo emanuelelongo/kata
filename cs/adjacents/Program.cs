@@ -90,7 +90,7 @@ namespace adjacents
             }
         }
 
-        static void Solve(ConsoleColor[,] map)
+        static void Solve()
         {
             for (int i = 0; i < H; i++)
             {        
@@ -103,7 +103,7 @@ namespace adjacents
 
         static void Main(string[] args)
         {
-            Solve(MAP);
+            Solve();
 
             var winner = Index.OrderByDescending(i => i.Value.Count).First();
             var winnerPoints = winner.Value.Append(winner.Key);
