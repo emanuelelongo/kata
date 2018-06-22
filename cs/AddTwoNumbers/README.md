@@ -1,7 +1,7 @@
 # Add Two Numbers
 This work is by [LeetCode](https://leetcode.com/)
 
-Original content ca be found at https://leetcode.com/problems/add-two-numbers/description
+Original content can be found at https://leetcode.com/problems/add-two-numbers/description
 
 ### Description
 You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
