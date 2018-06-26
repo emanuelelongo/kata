@@ -26,6 +26,8 @@ namespace ValidNumber
         [InlineData(".", false)]
         [InlineData("..", false)]
         [InlineData(". ", false)]
+        [InlineData("3.5e+3.5e+3.5", false)]
+        [InlineData("46.e3", true)]
         public void Test(string str, bool expected)
         {
             var sol = new Solution();
