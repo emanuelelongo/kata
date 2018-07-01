@@ -11,10 +11,7 @@ namespace WordLadderII
             "hit", 
             "cog", 
             new string[] {"hot","dot","dog","lot","log","cog"},
-            new string[] {
-                "hit","hot","dot","dog","cog",
-                "hit","hot","lot","log","cog"
-            },
+            new string[] { "hit","hot","dot","dog","cog"},
             5
         )]
         public void Test(string beginWord, string endWord, string[] wordList, string[] expected, int len)
@@ -28,6 +25,16 @@ namespace WordLadderII
             {
                 Assert.Contains(seq, result);
             }
+        }
+
+        [Theory]
+        [InlineData("hit", "hot", true)]
+        [InlineData("hit", "lot", false)]
+        [InlineData("hit", "hit", false)]
+        public void TestAdjacent(string a, string b, bool expected)
+        {
+            var s = new Solution();
+            Assert.Equal(expected, s.Adjacent(a, b));
         }
 
         List<List<string>> splitSequences(string[] expected, int len)
